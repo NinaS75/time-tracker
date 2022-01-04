@@ -29,7 +29,9 @@ public class Tracker {
         }
         entries.remove(entry);
     }
-
+/** Return the size of all time entries.
+ * @param entry A time entry.
+*/
     public int size() {
         return entries.size();
     }
