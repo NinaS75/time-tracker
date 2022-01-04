@@ -1,15 +1,16 @@
 package training.taylor.timetracker.core;
-/** Represents a tracker.
- * @author Nina
- * @version 1.0
- * @since 1.0
-*/
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import training.taylor.timetracker.core.dao.TimeEntry;
 
 import java.util.List;
 
+/** Represents a tracker.
+ * @author Nina
+ * @version 1.0
+ * @since 1.0
+*/
 @Component
 public class Tracker {
     @Autowired
@@ -30,13 +31,14 @@ public class Tracker {
         entries.remove(entry);
     }
 /** Return the size of all time entries.
- * @param entry A time entry.
+ * @return int A time entry.
 */
     public int size() {
         return entries.size();
     }
 /** Return a time entry on index i
  * @param index An index int.
+ * @return TimeEntry
 */   public TimeEntry get(final int index) {
         return entries.get(index);
     }
