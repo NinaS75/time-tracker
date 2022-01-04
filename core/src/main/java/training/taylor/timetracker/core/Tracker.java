@@ -1,3 +1,6 @@
+/**
+ * Info about this package doing something for package-info.java file.
+ */
 package training.taylor.timetracker.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +16,9 @@ import java.util.List;
 */
 @Component
 public class Tracker {
+    /**
+    * The list of entries to be used in class.
+    */
     @Autowired
     private List<TimeEntry> entries;
     
@@ -40,7 +46,7 @@ public class Tracker {
         return entries.size();
     }
     
-    /** Return a time entry on index i
+    /** Return a time entry on index i.
      * @param index An index int.
      * @return TimeEntry
     */
