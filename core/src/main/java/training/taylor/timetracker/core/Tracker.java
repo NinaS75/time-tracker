@@ -21,14 +21,14 @@ public class Tracker {
     */
     @Autowired
     private List<TimeEntry> entries;
-    
+
     /** Add a time entry.
      * @param entry A time entry.
     */
     public void add(final TimeEntry entry) {
         entries.add(entry);
     }
-    
+
     /** Remove a time entry.
      * @param entry A time entry.
     */
@@ -45,7 +45,7 @@ public class Tracker {
     public int size() {
         return entries.size();
     }
-    
+
     /** Return a time entry on index i.
      * @param index An index int.
      * @return TimeEntry
