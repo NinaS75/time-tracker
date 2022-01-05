@@ -16,7 +16,7 @@ import java.util.List;
 public class TrackerCoreConfig {
 
     @Bean(name = "timesheet")
-    public List<TimeEntry> timeEntries() {
+    public final List<TimeEntry> timeEntries() {
         return new ArrayList<>();
     }
 }
